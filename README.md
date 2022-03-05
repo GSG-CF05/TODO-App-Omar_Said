@@ -14,7 +14,7 @@ Todo List is an application specially built to keep track of errands or tasks th
 - As a user, I can still have my list even if I close the browser window.
 
 ----------------------------------------------------------------------
-## How do I get the project on your local machine? <span id="clone"></span>
+## How do you get the project on your local machine? <span id="clone"></span>
 
 Just follow these simple steps:
 

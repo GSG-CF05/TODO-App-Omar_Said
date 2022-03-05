@@ -11,37 +11,37 @@ add.addEventListener("click", function add(event) {
   showToDo(localStorage.length - 1);
 });
 
-// function create_element(text) {
-//   const div1 = document.createElement("div");
-//   const par = document.createElement("p");
-//   const text_note = document.createTextNode(text);
-//   par.appendChild(text_note);
+function create_element(text) {
+  const div1 = document.createElement("div");
+  const par = document.createElement("p");
+  const text_note = document.createTextNode(text);
+  par.appendChild(text_note);
 
-//   const div2 = document.createElement("div");
-//   const btn_1_delete = document.createElement("button");
-//   const btn_delete = document.createTextNode("delete");
-//   btn_1_delete.appendChild(btn_delete);
+  const div2 = document.createElement("div");
+  const btn_1_delete = document.createElement("button");
+  const btn_delete = document.createTextNode("delete");
+  btn_1_delete.appendChild(btn_delete);
 
-//   const btn_2_edit = document.createElement("button");
-//   const btn_edit = document.createTextNode("edit");
-//   btn_2_edit.appendChild(btn_edit);
+  const btn_2_edit = document.createElement("button");
+  const btn_edit = document.createTextNode("edit");
+  btn_2_edit.appendChild(btn_edit);
 
-//   div2.appendChild(btn_1_delete);
-//   div2.appendChild(btn_2_edit);
+  div2.appendChild(btn_1_delete);
+  div2.appendChild(btn_2_edit);
 
-//   div1.setAttribute("id", "cont_list");
+  div1.setAttribute("id", "cont_list");
 
-//   btn_1_delete.setAttribute("class", "btns");
-//   btn_2_edit.setAttribute("class", "btns");
+  btn_1_delete.setAttribute("class", "btns");
+  btn_2_edit.setAttribute("class", "btns");
 
-//   btn_1_delete.setAttribute("id", "btn_delete");
-//   btn_2_edit.setAttribute("id", "btn_edit");
+  btn_1_delete.setAttribute("id", "btn_delete");
+  btn_2_edit.setAttribute("id", "btn_edit");
 
-//   div1.appendChild(par);
-//   div1.appendChild(div2);
+  div1.appendChild(par);
+  div1.appendChild(div2);
 
-//   list.appendChild(div1);
-// }
+  list.appendChild(div1);
+}
 
 // function showToDo(index) {
 //   if (index == 0) {
