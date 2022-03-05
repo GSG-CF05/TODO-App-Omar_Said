@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+   background: linear-gradient(to bottom, #68EACC 0%, #497BE8 100%);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.main_div {
+  width: 70%;
+  margin: auto;
+  margin-top: 20px;
+  border: 0px dotted white;
+  background-color: white;
+  padding: 20px 20px;
+  font-size: 14px;
+  border-radius: 30px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+.main_div h1 {
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-left: 3%;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0e0c0c;
+}
+.main_div .form {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+.main_div #write_new {
+  margin: 20px 0;
+  width: 85%;
+  padding: 15px 5px 15px 5px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 15px rgba(202, 190, 190, 0.1);
+  margin-right: 6%;
+  border:1px solid lightgray;
+  outline: none;
+}
+.main_div #write_new::placeholder{
+  color: lightgray;
+  font-size: 20px;
+}
+.main_div #btn_Add {
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #8e49e8;
+  margin: 20px 0;
+  width: 10%;
+  height: 45px;
+  text-align: center;
+  font-size: 35px;
+}
+.foo {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+.foo #p {
+  margin: 20px 0;
+  width: 60%;
+  height: 45px;
+  font-size: 20px;
+  text-align: center;
+  margin-right: 31%;
+  padding-right: 21%;
+  padding-top: 1%;
+  font-size: 1em;
+}
+.foo #clear {
+  padding: 6px 10px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #8e49e8;
+  font-size: 1em;
+  margin: 20px 0;
+  width: 26%;
+  height: 45px;
+  text-align: center;
+  margin-right: 3%;
+}
+.main_div #list {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#cont_list {
+ display: flex;
+ justify-content: space-between; 
+ flex-wrap: wrap;
+ padding: 5px;
+ background-color: #80808045;
+ margin-bottom: 10px;
+ box-shadow: 0px 10px 15px rgba(202, 190, 190, 0.1);
+  align-items: center;
+}
+
+#cont_list p {
+  font-size: 20px;
+}
+.btns {
+  padding: 10px ;
+  border: 1px solid transparent;
+  margin-left: 5px;
+  color: #FFF;
+  font-weight: bold;
+}
+#btn_delete {
+  background-color: red;
+}
+#btn_edit {
+  background-color: blue;
+}
+
+#num_list {
+  color: red;
+  font-weight: bold;
+}
