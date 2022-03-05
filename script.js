@@ -43,53 +43,53 @@ function create_element(text) {
   list.appendChild(div1);
 }
 
-// function showToDo(index) {
-//   if (index == 0) {
+function showToDo(index) {
+  if (index == 0) {
    
-//     for (i = 0; i < localStorage.length; i++) {
-//       create_element(localStorage.getItem(i));
-//     }
-//   } else if (index > 0) {
+    for (i = 0; i < localStorage.length; i++) {
+      create_element(localStorage.getItem(i));
+    }
+  } else if (index > 0) {
 
-//     create_element(localStorage.getItem(index));
-//   } else if (index == -1) {
+    create_element(localStorage.getItem(index));
+  } else if (index == -1) {
 
-//     document.querySelectorAll("#cont_list").forEach(function (a) {
-//       a.remove();
-//     }); 
-//   del_element();
+    document.querySelectorAll("#cont_list").forEach(function (a) {
+      a.remove();
+    }); 
+  del_element();
 
-//   span_num.textContent = localStorage.length; 
-// }
+  span_num.textContent = localStorage.length; 
+}
 
-// clear.addEventListener("click", function clean(event) {
-//   event.preventDefault();
-//   localStorage.clear();
-//   showToDo(-1);
-// });
-// function del_element() {
-//   const elem = document.querySelectorAll("#btn_delete");
-//   const content = document.querySelectorAll("#cont_list");
-//   elem.forEach(function (item, index) {
-//     item.addEventListener(
-//       "click",
-//       function delete_el(event) {
-//         event.preventDefault();
-//         if (localStorage.length != 1) {
-//           let tmp = index;
-//           while (tmp < localStorage.length - 1) {
-//             localStorage.setItem(tmp, localStorage.getItem(tmp + 1));
-//             tmp++;
-//           }
-//           localStorage.removeItem(tmp);
-//         } else {
-//           localStorage.removeItem(index);
-//         }
-//         content[index].remove();
-//       },
-//       { once: true }
-//     );
-//   });
-// }
+clear.addEventListener("click", function clean(event) {
+  event.preventDefault();
+  localStorage.clear();
+  showToDo(-1);
+});
+function del_element() {
+  const elem = document.querySelectorAll("#btn_delete");
+  const content = document.querySelectorAll("#cont_list");
+  elem.forEach(function (item, index) {
+    item.addEventListener(
+      "click",
+      function delete_el(event) {
+        event.preventDefault();
+        if (localStorage.length != 1) {
+          let tmp = index;
+          while (tmp < localStorage.length - 1) {
+            localStorage.setItem(tmp, localStorage.getItem(tmp + 1));
+            tmp++;
+          }
+          localStorage.removeItem(tmp);
+        } else {
+          localStorage.removeItem(index);
+        }
+        content[index].remove();
+      },
+      { once: true }
+    );
+  });
+}
 
-// window.onload = showToDo(0); 
+window.onload = showToDo(0); 
